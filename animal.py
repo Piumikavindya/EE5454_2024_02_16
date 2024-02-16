@@ -1,8 +1,15 @@
 import sys
+
+def cat():
+	print('Meow')
+
 def default():
     print('Hello')
 
     def main():
+	if sys.argv[1] == 'Car':
+	cat()
+	else:
         default()
 
         if __name__ == '__main__':
